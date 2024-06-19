@@ -15,7 +15,7 @@ thread = Thread (target=task) # การสร้าง thread
 thread.start()
 # wait for the thread to finish
 print (f'{ctime()} Waiting for the thread...')   # ตัวนี้จะแสดงก่อนเพราะไม่ต้องรอแต่ทั้งสองตัวทำงานพร้อมกัน
-thread.join() 
+thread.join()  
 
 
 

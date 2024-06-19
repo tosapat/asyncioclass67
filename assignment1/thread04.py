@@ -23,4 +23,4 @@ thread.join()
 
     #get thevalue returned from run
 value = thread.value
-print(f'{ctime()} Got: {value}') # แสดงเวลาปัจจุบันเมื่อเธรดหลักได้รับค่าจากเธรดใหม่
+print(f'{ctime()} Got: {value}') # แสดงเวลาปัจจุบันเมื่อเธรดหลักได้รับค่าจากเธรดใหม่ 

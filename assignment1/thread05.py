@@ -11,7 +11,7 @@ def thread_function(name):
 
 if __name__ == "__main__":
     format = "%(asctime)s: %(message)s" # กำหนดรูปแบบของข้อความที่บันทึก โดยจะแสดงเวลาปัจจุบันและข้อความ
-    logging.basicConfig(format=format, level=logging.INFO, datefmt="%H:%M:%S")
+    logging.basicConfig(format=format, level=logging.INFO, datefmt="%H:%M:%S") 
 
     logging.info("Main    : before creating thread")
     x = threading.Thread(target=thread_function, args=(1,)) #สร้างเธรดใหม่โดยให้ target เป็นฟังก์ชัน thread_function และส่งอาร์กิวเมนต์ (1,) ให้กับฟังก์ชันนั้น
