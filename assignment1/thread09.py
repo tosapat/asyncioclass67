@@ -32,4 +32,4 @@ if __name__ == "__main__":
     with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
         for index in range(2):
             executor.submit(database.locked_update, index)
-    logging.info("Testing locked update. Ending value is %d.", database.value)
+    logging.info("Testing locked update. Ending value is %d.", database.value)   
