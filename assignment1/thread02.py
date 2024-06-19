@@ -14,5 +14,5 @@ thread = Thread(target=task, args=(1.5, 'New message from another thread'))  #�
 # run the thread
 thread.start()
 # wait for the thread to finish
-print(f'{ctime()} Waiting for the thread...')
+print(f'{ctime()} Waiting for the thread...') # จะแสดงตัวแรก
 thread.join()
