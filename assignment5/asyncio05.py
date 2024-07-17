@@ -13,14 +13,10 @@ async def main():
     
     dishes = ['Rice', 'Noodle', 'Curry']
     tasks = [asyncio.create_task(cook_dish(dish)) for dish in dishes]
-    
-    
     done, pending = await asyncio.wait(tasks, return_when=asyncio.FIRST_COMPLETED)
-    
     
     for task in done:
         print(task.result())
-    
     
     print(f'Uncompleted task: {len(pending)}')
         
