@@ -13,8 +13,7 @@ async def process_pokemon_file(file_path):
         name = pokemon_data['name']
         moves = [move['move']['name'] for move in pokemon_data['moves']]
         
-        moves_file_path = Path(pokemonmove_directory) / f"{name}_moves.txt"
-        async with aiofiles.open(moves_file_path, mode='w') as f_out:
+        moves_file_path = Path(pokemonmove_directory) / f"{name}_moves.txasync with aiofiles.open(moves_file_path, mode='w') as f_out:
             await f_out.write('\n'.join(moves))
         print(f"Wrote moves of {name} to {moves_file_path}")
 
